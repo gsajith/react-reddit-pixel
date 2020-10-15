@@ -51,6 +51,8 @@ otherwise CI will complain there's no `window`.
 
 ## Standard Event Types
 
+See the full list here: [Event Types](https://advertising.reddithelp.com/en/categories/managing-ads/implementing-reddit-pixel);
+
 | Event Name    | Description                                                                                                          | Code                                |
 | ------------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
 | PageVisit     | Default event in the conversion pixel <br>that will track that the user has <br>visited one of the advertiser’s page | RedditPixel.pageVisit();            |
