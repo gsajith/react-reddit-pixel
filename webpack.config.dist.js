@@ -1,31 +1,31 @@
-const path = require("path");
-const webpack = require("webpack");
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
-  devtool: "cheap-module-source-map",
-  entry: ["./src/index.js"],
+  devtool: 'cheap-module-source-map',
+  entry: ['./src/index.js'],
   output: {
-    path: path.join(__dirname, "dist"),
-    filename: "reddit-pixel.js",
-    libraryTarget: "umd",
-    library: "ReactPixel",
+    path: path.join(__dirname, 'dist'),
+    filename: 'fb-pixel.js',
+    libraryTarget: 'umd',
+    library: 'ReactPixel',
   },
   module: {
     rules: [
       {
-        use: "babel-loader",
+        use: 'babel-loader',
         test: /\.js$/,
         exclude: /node_modules/,
       },
     ],
   },
   resolve: {
-    extensions: [".js"],
+    extensions: ['.js'],
   },
   plugins: [
     new webpack.DefinePlugin({
-      "process.env": {
-        NODE_ENV: JSON.stringify("production"),
+      'process.env': {
+        NODE_ENV: JSON.stringify('production'),
       },
     }),
     new webpack.LoaderOptionsPlugin({

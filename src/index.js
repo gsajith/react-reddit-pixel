@@ -22,7 +22,7 @@ const warn = (...args) => {
     return;
   }
   // eslint-disable-next-line no-console
-  console.info(...["[react-reddit-pixel]"].concat(args));
+  console.info(...['[react-reddit-pixel]'].concat(args));
 };
 
 /**
@@ -34,13 +34,13 @@ const log = (...args) => {
     return;
   }
   // eslint-disable-next-line no-console
-  console.info(...["[react-reddit-pixel]"].concat(args));
+  console.info(...['[react-reddit-pixel]'].concat(args));
 };
 
 const verifyInit = () => {
   if (!initialized) {
     warn(
-      "Pixel not initialized before using call RedditPixel.init with required params"
+      'Pixel not initialized before using call RedditPixel.init with required params'
     );
   }
   return initialized;
@@ -72,9 +72,9 @@ export default {
     /* eslint-enable */
 
     if (!pixelId) {
-      warn("Please provide Reddit Advertiser ID for initializing");
+      warn('Please provide Reddit Advertiser ID for initializing');
     } else {
-      rdt("init", pixelId); // eslint-disable-line no-undef
+      rdt('init', pixelId); // eslint-disable-line no-undef
 
       initialized = true;
       debug = options.debug;
@@ -86,7 +86,7 @@ export default {
       return;
     }
 
-    rdt("track", "PageVisit"); // eslint-disable-line no-undef
+    rdt('track', 'PageVisit'); // eslint-disable-line no-undef
 
     if (debug) {
       log("called rdt('track', 'PageVisit');");
@@ -98,7 +98,7 @@ export default {
       return;
     }
 
-    rdt("disableFirstPartyCookies"); // eslint-disable-line no-undef
+    rdt('disableFirstPartyCookies'); // eslint-disable-line no-undef
 
     if (debug) {
       log("called rdt('disableFirstPartyCookies');");
@@ -110,7 +110,7 @@ export default {
       return;
     }
 
-    rdt("track", event); // eslint-disable-line no-undef
+    rdt('track', event); // eslint-disable-line no-undef
 
     if (debug) {
       log(`called rdt('track', '${event}');`);
