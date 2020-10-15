@@ -31,8 +31,9 @@ const options = {
 RedditPixel.init("yourRedditAdvertiserIDGoesHere", options);
 
 RedditPixel.pageVisit(); // For tracking page visit
-RedditPixel.track(event); // For tracking standard events, see https://advertising.reddithelp.com/en/categories/managing-ads/implementing-reddit-pixel
+RedditPixel.track(event); // For tracking standard events, see https://advertising.reddithelp.com/en/categories/managing-ads/implementing-reddit-pixel#N1
 RedditPixel.track("Search");
+RedditPixel.rdt(...args); // For tracking custom events, though Reddit currently doesn't list support for this in their documentation
 ```
 
 **if you're bundling in CI**
@@ -47,6 +48,14 @@ RedditPixel.track("Search");
 ```
 
 otherwise CI will complain there's no `window`.
+
+## Standard Event Types
+
+| Tables   |      Are      |   Cool |
+| -------- | :-----------: | -----: |
+| col 1 is | left-aligned  | \$1600 |
+| col 2 is |   centered    |   \$12 |
+| col 3 is | right-aligned |    \$1 |
 
 ## Disable first-party cookies
 
