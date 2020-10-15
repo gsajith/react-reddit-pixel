@@ -51,11 +51,18 @@ otherwise CI will complain there's no `window`.
 
 ## Standard Event Types
 
-| Tables   |      Are      |   Cool |
-| -------- | :-----------: | -----: |
-| col 1 is | left-aligned  | \$1600 |
-| col 2 is |   centered    |   \$12 |
-| col 3 is | right-aligned |    \$1 |
+| Event Name    | Description                                                                                                          | Code                                |
+| ------------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| PageVisit     | Default event in the conversion pixel <br>that will track that the user has <br>visited one of the advertiser’s page | RedditPixel.pageVisit();            |
+| ViewContent   | User view a particular content on a page                                                                             | RedditPixel.track("ViewContent");   |
+| Search        | User performed a search query                                                                                        | RedditPixel.track("Search");        |
+| AddToCart     | User added a product to the shopping cart                                                                            | RedditPixel.track("AddToCart");     |
+| AddToWishlist | User added a product to wishlist                                                                                     | RedditPixel.track("AddToWishlist"); |
+| Purchase      | User completed the purchase                                                                                          | RedditPixel.track("Purchase");      |
+| Lead          | When user submits information expressing <br>interest in the advertised product/offer                                | RedditPixel.track("Lead");          |
+| SignUp        | User completed registration form or sign up<br>for a new service                                                     | RedditPixel.track("SignUp");        |
+
+> :warning: **Noter**: Event names are **case-sensitive**!
 
 ## Disable first-party cookies
 
