@@ -25,11 +25,10 @@ yarn add react-reddit-pixel
 ```js
 import RedditPixel from "react-reddit-pixel";
 
-const userIdentification = { user_email: "some@email.com" }; // optional
 const options = {
   debug: false, // set true to enable logs
 };
-RedditPixel.init("yourRedditAdvertiserIDGoesHere", userIdentification, options);
+RedditPixel.init("yourRedditAdvertiserIDGoesHere", options);
 
 RedditPixel.pageVisit(); // For tracking page visit
 RedditPixel.track(event); // For tracking standard events, see https://advertising.reddithelp.com/en/categories/managing-ads/implementing-reddit-pixel
