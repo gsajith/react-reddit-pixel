@@ -6,7 +6,7 @@ module.exports = {
   entry: ['./src/index.js'],
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'fb-pixel.js',
+    filename: 'reddit-pixel.js',
     libraryTarget: 'umd',
     library: 'ReactPixel',
   },
