@@ -126,10 +126,6 @@ export default {
 
     if (debug) {
       log(`called rdt('${args.slice(0, 2).join("', '")}')`);
-
-      if (args[2]) {
-        log("with data", args[2]);
-      }
     }
   },
 };

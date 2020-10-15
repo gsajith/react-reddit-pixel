@@ -1,0 +1,36 @@
+{
+  "name": "react-reddit-pixel",
+  "version": "1.0.0",
+  "description": "React JS pixel for Reddit",
+  "main": "dist/reddit-pixel.js",
+  "scripts": {
+    "start": "export NODE_ENV=development&& webpack-dev-server --config webpack.config.dev.js",
+    "bundle": "export NODE_ENV=production&& webpack -p --config webpack.config.dist.js",
+    "lint": "eslint src/ --fix",
+    "clean": "rm -rf node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsajith/react-reddit-pixel.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-component",
+    "pixel",
+    "reddit-pixel",
+    "reddit"
+  ],
+  "author": {
+    "name": "Gautham Sajith",
+    "email": "gsajith@umich.edu"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gsajith/react-reddit-pixel/issues"
+  },
+  "homepage": "https://github.com/gsajith/react-reddit-pixel#readme",
+  "devDependencies": {
+    "webpack": "^5.1.0"
+  }
+}
