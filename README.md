@@ -62,7 +62,7 @@ otherwise CI will complain there's no `window`.
 | Lead          | When user submits information expressing <br>interest in the advertised product/offer                                | RedditPixel.track("Lead");          |
 | SignUp        | User completed registration form or sign up<br>for a new service                                                     | RedditPixel.track("SignUp");        |
 
-> :warning: **Noter**: Event names are **case-sensitive**!
+> :warning: **Note**: Event names are **case-sensitive**! :warning:
 
 ## Disable first-party cookies
 

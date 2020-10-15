@@ -93,6 +93,18 @@ export default {
     }
   },
 
+  disableFirstPartyCookies() {
+    if (!verifyInit()) {
+      return;
+    }
+
+    rdt("disableFirstPartyCookies"); // eslint-disable-line no-undef
+
+    if (debug) {
+      log("called rdt('disableFirstPartyCookies');");
+    }
+  },
+
   track(event) {
     if (!verifyInit()) {
       return;
