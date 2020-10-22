@@ -70,7 +70,7 @@ See the full list here: [Event Types](https://advertising.reddithelp.com/en/cate
 
 ```js
   ...
-  RedditPixel.disableFirstPartyCookies(); // Do this before tracking any events
+  RedditPixel.disableFirstPartyCookies(); // Do this before each tracking event that you'd like to disable first-party cookies for
   RedditPixel.pageVisit();
   ...
 ```
