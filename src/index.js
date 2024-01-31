@@ -74,7 +74,7 @@ export default {
     if (!pixelId) {
       warn('Please provide Reddit Advertiser ID for initializing');
     } else {
-      rdt('init', pixelId); // eslint-disable-line no-undef
+      rdt('init', pixelId, options); // eslint-disable-line no-undef
 
       initialized = true;
       debug = options.debug;

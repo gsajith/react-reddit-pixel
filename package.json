@@ -4,8 +4,8 @@
   "description": "React JS pixel for Reddit",
   "main": "dist/reddit-pixel.js",
   "scripts": {
-    "start": "export NODE_ENV=development&& webpack-dev-server --config webpack.config.dev.js",
-    "bundle": "export NODE_ENV=production&& webpack -p --config webpack.config.dist.js",
+    "start": "export NODE_ENV=development && webpack-dev-server --config webpack.config.dev.js",
+    "bundle": "export NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider && webpack --mode production --env production --config webpack.config.dist.js",
     "lint": "eslint src/ --fix",
     "clean": "rm -rf node_modules"
   },
@@ -25,6 +25,13 @@
     "name": "Gautham Sajith",
     "email": "gsajith@umich.edu"
   },
+  "contributors": [
+    {
+      "name": "Dylan Golow",
+      "email": "dylangolow@gmail.com",
+      "url": "https://github.com/dylangolow"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gsajith/react-reddit-pixel/issues"
